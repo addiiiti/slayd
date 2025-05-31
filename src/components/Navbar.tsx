@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-slayd-black/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+        scrolled ? 'bg-white/95 backdrop-blur-sm shadow-soft' : 'bg-transparent'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -41,19 +41,19 @@ const Navbar: React.FC = () => {
           
           <div className="hidden md:flex items-center space-x-8">
             <nav className="flex items-center space-x-6">
-              <a href="#how-it-works" className="text-slayd-white hover:text-slayd-pink transition-colors">
+              <a href="#how-it-works" className="text-slayd-text hover:text-slayd-pink transition-colors">
                 How It Works
               </a>
-              <a href="#why-slayd" className="text-slayd-white hover:text-slayd-pink transition-colors">
+              <a href="#why-slayd" className="text-slayd-text hover:text-slayd-pink transition-colors">
                 Why Slayd
               </a>
-              <a href="#" className="text-slayd-white hover:text-slayd-pink transition-colors">
+              <a href="#" className="text-slayd-text hover:text-slayd-pink transition-colors">
                 Docs
               </a>
             </nav>
             
             <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm">
+              <Button variant="secondary" size="sm">
                 Login
               </Button>
               <Button variant="primary" size="sm">
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-slayd-white hover:text-slayd-pink"
+              className="text-slayd-text hover:text-slayd-pink"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -74,10 +74,9 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       
-      {/* Mobile menu */}
       {isOpen && (
         <motion.div
-          className="md:hidden bg-slayd-black border-t border-slayd-purple/20"
+          className="md:hidden bg-white border-t border-slayd-purple/20"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
@@ -85,27 +84,27 @@ const Navbar: React.FC = () => {
           <div className="px-4 pt-2 pb-4 space-y-4">
             <a
               href="#how-it-works"
-              className="block py-2 text-slayd-white hover:text-slayd-pink"
+              className="block py-2 text-slayd-text hover:text-slayd-pink"
               onClick={() => setIsOpen(false)}
             >
               How It Works
             </a>
             <a
               href="#why-slayd"
-              className="block py-2 text-slayd-white hover:text-slayd-pink"
+              className="block py-2 text-slayd-text hover:text-slayd-pink"
               onClick={() => setIsOpen(false)}
             >
               Why Slayd
             </a>
             <a
               href="#"
-              className="block py-2 text-slayd-white hover:text-slayd-pink"
+              className="block py-2 text-slayd-text hover:text-slayd-pink"
               onClick={() => setIsOpen(false)}
             >
               Docs
             </a>
             <div className="pt-2 flex flex-col space-y-3">
-              <Button variant="outline" isFullWidth>
+              <Button variant="secondary" isFullWidth>
                 Login
               </Button>
               <Button variant="primary" isFullWidth>
