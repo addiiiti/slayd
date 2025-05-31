@@ -20,12 +20,12 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   isFullWidth = false,
 }) => {
-  const baseStyles = 'font-medium rounded-full transition-all duration-200 flex items-center justify-center';
+  const baseStyles = 'font-medium rounded-full transition-all duration-200 flex items-center justify-center shadow-soft hover:shadow-lg';
   
   const variantStyles = {
-    primary: 'bg-slayd-blue hover:bg-opacity-90 text-white shadow-lg hover:shadow-xl hover:shadow-slayd-blue/20',
-    secondary: 'bg-slayd-purple hover:bg-opacity-90 text-white shadow-lg hover:shadow-xl hover:shadow-slayd-purple/20',
-    outline: 'bg-transparent border-2 border-slayd-pink text-slayd-pink hover:bg-slayd-pink hover:bg-opacity-10',
+    primary: 'bg-gradient-to-r from-slayd-blue via-slayd-purple to-slayd-pink text-white hover:opacity-90',
+    secondary: 'bg-white text-slayd-text hover:bg-slayd-lavender',
+    outline: 'bg-transparent border-2 border-slayd-pink text-slayd-pink hover:bg-slayd-pink/10',
   };
   
   const sizeStyles = {

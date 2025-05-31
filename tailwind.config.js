@@ -5,15 +5,16 @@ export default {
     extend: {
       colors: {
         slayd: {
-          black: '#0B0B0B',
-          pink: '#FF4FBF',
-          purple: '#5C33F6',
-          blue: '#5BC0EB',
-          white: '#F2F2F2',
+          white: '#FFFFFF',
+          pink: '#FF9ECD',
+          purple: '#B4A5FF',
+          blue: '#A5E1FF',
+          lavender: '#E9E4FF',
+          text: '#4A4A4A'
         },
       },
       fontFamily: {
-        sans: ['Space Grotesk', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
       },
       animation: {
         'gradient-x': 'gradient-x 15s ease infinite',
@@ -39,6 +40,9 @@ export default {
             transform: 'translateY(-20px)',
           },
         },
+      },
+      boxShadow: {
+        'soft': '0 8px 30px rgba(0, 0, 0, 0.08)',
       },
     },
   },

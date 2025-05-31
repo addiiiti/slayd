@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slayd-black text-slayd-white font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-white via-slayd-lavender to-white font-sans text-slayd-text">
       <Navbar />
       <main>
         <HeroSection />
