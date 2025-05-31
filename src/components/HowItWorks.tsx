@@ -26,7 +26,7 @@ const steps = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <section id="how-it-works" className="py-16 md:py-24 relative">
+    <section id="how-it-works\" className="py-16 md:py-24 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
