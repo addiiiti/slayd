@@ -20,6 +20,7 @@ export default {
         'gradient-x': 'gradient-x 15s ease infinite',
         'float': 'float 6s ease-in-out infinite',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-slow': 'bounce 3s infinite',
       },
       keyframes: {
         'gradient-x': {
@@ -43,6 +44,7 @@ export default {
       },
       boxShadow: {
         'soft': '0 8px 30px rgba(0, 0, 0, 0.08)',
+        'glow': '0 0 20px rgba(255, 158, 205, 0.3)',
       },
     },
   },
